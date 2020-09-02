@@ -1,0 +1,624 @@
+/* Todos los elementos de la pagina */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+list-style: none;
+font-family: 'Alata', sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    background-color: #9cba71;
+    background-color: #3a1a00;
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%23003e07' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");    
+    font-size: 16px;
+
+}
+
+a {
+    
+    text-decoration: none;
+    font-family: 'Alata', sans-serif;
+    color: white;
+
+}
+
+h2,p {
+    color: black;
+}
+
+hr {
+    margin: 10px 1px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* NAVIGATION */
+.nav-main{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 20px 0;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 35px;
+}
+
+
+/* LEFT part of Navigation */
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-menu ul li a{
+    padding: 10px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 15px;
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 35px;
+    z-index: 2;
+    font-size: 1.4rem;
+    display: none;
+}
+
+
+/* SHOWCASE BANNER*/
+
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url(img/VERDE.jpg) no-repeat center/cover;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid black;
+    
+}
+
+.btn {
+    color: whitesmoke;
+    cursor: pointer;
+    display: inline-block;
+    border : 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #412402;
+    font-size: 15px;
+    border: 1px solid #153D02 ;
+    margin: 10px 0px;
+}
+
+.btn:hover{
+    opacity: .9;
+}
+
+
+.showcase {
+    margin-bottom: 10px;
+}
+
+.title-banner {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* 3 COLUMNS */
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+
+
+}
+
+.columns img {
+    width: 100%;
+    height: 180px;
+    border: 1px solid black;
+}
+
+.columns h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.columns a {
+    padding: 10px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.columns a:hover {
+    text-decoration: underline;
+}
+
+.paragraph {
+    color: white;
+    margin: auto;
+    font-size: 15px;
+}
+
+
+/* FIRST BANNER */
+
+.first-banner {
+    width: 100%;
+    height: 350px;
+    background: url(img/rejas.jpg) no-repeat center/cover;
+    margin-bottom: 40px;
+   opacity:  0.8;
+}
+
+/* CONTENIDO DEL BANNER */
+
+.first-banner .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: bisque;
+   
+}
+
+.first-banner  {
+    margin: 10px 0 20px 0;
+    border: 1px solid white;
+}
+
+.first-banner .content h2 , p {
+color:white;    
+margin: 10px 0 20px 0;
+}
+
+
+/* 4 COLUMNS */
+
+.columns2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+
+
+}
+
+.columns2 img {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #f2f2f2;
+}
+
+.columns2 h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.columns2 a {
+    padding: 10px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.columns2 a:hover {
+    text-decoration: underline;
+}
+
+.paragraph {
+    color: white;
+    margin: auto;
+    font-size: 15px;
+}
+
+
+/* SECOND BANNER */
+
+.second-banner {
+    width: 100%;
+    height:400px;
+    background: url(img/deco.jpg) no-repeat center center/cover;
+    margin-top: 25px;
+    border: 1px solid black;
+}
+
+.content-banner-two h4 {
+    color: black;
+    font-size: 15px;
+    padding: 320px 10px 0 30px;
+    font-family: 'Alata', sans-serif;
+
+}
+
+
+/* SOCIAL LINKS */
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+
+/* GALERIA DE IMAGENES */
+
+.galeria-title {
+    text-align: center;
+}
+
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    /*display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 25px;
+}
+
+.gal li {
+    margin: 5px;
+}
+
+.galeria img {
+    width: 350px;
+    height: 320px;
+    border: 1px solid white;
+
+}
+
+
+/* MODAL */
+
+.modal{
+    display: none;
+}
+
+.modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0, 0 , 0 , 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid black;
+    box-sizing: border-box;
+}
+
+.imagen a:nth-child(2) {  /* solo marca la 2da etiqueta a*/
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.close {
+    display: block;
+    background: black;
+    width: 35px;
+    height: 35px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+
+/* PAGINA DE INFO QUIENES SOMOS */
+
+.info-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flyer img {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.payment-options  {
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: sans-serif;
+    line-height: 25px;
+
+}
+
+/* INFORMATION TEXT */
+
+.information h3 {
+    color: white;
+    margin-left: 45px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.information h4 {
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+/* PEDIDO */
+
+.order-title {
+    display: block;
+    color:#fff; 
+    text-align: center;
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    padding: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 400px;
+    background: black;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 9px;
+    font-family: sans-serif;
+    border: 3px solid green;
+
+}
+
+.order-title {
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.camps {
+    width: 100%;
+    background: whitesmoke;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 12px ;
+    border: 3px solid green;
+    font-size: 14px;
+}
+
+#select {
+    width: 100%;
+    background: whitesmoke;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 3px solid green;
+
+
+}
+
+.buttom {
+    width: 49%;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 17px;
+    border: 3px solid green;
+    background: grey;
+    color: white;
+    font-family: sans-serif;
+    padding: 5px;
+    margin-left: 1px;
+}
+
+
+/* FOOTER */
+
+.footer-links {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+    
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 2.3;
+}
+
+.footer {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+@media (max-width: 700px) {
+    
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        transform: translateX(-400px);
+        padding: 20px;
+        opacity: .9;
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li {
+        padding: 20px;
+        border-bottom: #cccccc solid 1px;
+    }
+
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+        margin-top: 15px;
+    }
+
+    .columns, 
+    .columns2 {
+        grid-template-columns: repeat(2 , 1fr);
+        
+    }
+    
+    .content-banner-two,
+    .first-banner .content {
+        width: 80%;
+    }
+    
+    .footer-links .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+}
+
+    .container ul.galeria {
+        width: 80%;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .columns,
+    .columns2 {
+        grid-template-columns: 1fr;
+    }
+
+    .columns,
+    .columns2 img {
+        height: 275px;
+    }
+
+    .content-banner-two,
+    .first-banner .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .container ul.galeria {
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
